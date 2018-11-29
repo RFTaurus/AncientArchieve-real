@@ -1,0 +1,97 @@
+/* Custom Font */
+@font-face {
+    font-family: "traffolight";
+    src: url("../font/traffolight.otf") format("opentype");
+}
+
+/* Content */
+body{
+    background-color: #4AB3B6;
+    font-family: 'traffolight';
+    color: #E6E6E6;
+
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.no-js #loader { 
+    display: none;  
+}
+
+.js #loader { 
+    display: block; 
+    position: absolute; 
+    left: 100px; 
+    top: 0; 
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../gif/Preloader_3.gif) center no-repeat #ffffff;
+}
+
+.container-head{
+    display: inline;
+    padding-top: 5vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-head h1{
+    display: inline;
+}
+
+.container-head a{
+    display: inline;
+    padding-top: 0.75vh;
+    font-size: 1.5em;
+    color: inherit;
+    text-decoration: none;
+    float: right;
+}
+
+.container-body{
+    background-image: url(../img/cloud-docs.png);
+    background-repeat: no-repeat;
+    background-position-x: 40vw;
+    background-size: 50% auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20vh;
+    /* background-color: black; */
+}
+
+.container-body h1{
+    display: flex;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.container-body p{
+    font-size: 2em;
+    padding-right: 20vw;
+    margin-top: -10vh;
+    /* background-color: black; */
+}
+
+@media screen and (min-width: 1380px){
+    .container-body p{
+        position: absolute;
+        padding-top: 30vw;
+        /* font-size: 2em;
+        padding-right: 20vw;
+        margin-top: -10vh;
+        background-color: black; */
+    }    
+}
