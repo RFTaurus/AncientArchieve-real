@@ -355,21 +355,36 @@
                         <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
+                          <div class="dropzone-wrapper">
+                            <div class="dropzone-desc">
+                            <i class="glyphicon glyphicon-download-alt"></i>
+                            <p>Choose a PDF file or drag it here.</p>
+                            </div>
+                            <!-- <input id="uploadPDF" type="file" name="img_logo" class="dropzone"> -->
+                            <input id="uploadPDF" type="file" name="myPDF" class="dropzone">
+                          </div>
+
                           <div class="preview-zone hidden">
                             <div class="box box-solid">
                             <div class="with-border">
                               <h2>File Preview</h2>
                             </div>
+
+                            <!-- PDF Preview Start -->
+
+                            <input class="btn btn-primary center-block" type="button" value="Preview" onclick="PreviewImage();" />
+                            <br>
+
+                            <div style="clear:both">
+                              <iframe target="_blank" id="viewer" frameborder="0" scrolling="no" width="100%" height="500"></iframe>
+                            </div>        
+
+                            <!-- PDF Preview End -->
+
                             <div class="box-body"></div>
                             </div>
                           </div>
-                          <div class="dropzone-wrapper">
-                            <div class="dropzone-desc">
-                            <i class="glyphicon glyphicon-download-alt"></i>
-                            <p>Choose an image file or drag it here.</p>
-                            </div>
-                            <input type="file" name="img_logo" class="dropzone">
-                          </div>
+
                           </div>
                         </div>
                         </div>

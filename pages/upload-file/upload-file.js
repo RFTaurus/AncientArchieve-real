@@ -3,9 +3,7 @@ function readFile(input) {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-    var htmlPreview = 
-    '<img width="200" src="' + e.target.result + '" />'+
-    '<p>' + input.files[0].name + '</p>';
+    var htmlPreview = '<p>' + input.files[0].name + '</p>';
     var wrapperZone = $(input).parent();
     var previewZone = $(input).parent().parent().find('.preview-zone');
     var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
@@ -49,3 +47,9 @@ $('.remove-preview').on('click', function() {
     previewZone.addClass('hidden');
     reset(dropzone);
 });
+
+function PreviewImage() {
+    pdffile=document.getElementById("uploadPDF").files[0];
+    pdffile_url=URL.createObjectURL(pdffile);
+    $('#viewer').attr('src',pdffile_url);
+}
