@@ -24,9 +24,11 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../upload-file/upload-file.css" />
+
   <!-- Website Theme -->
   <meta id="theme-color" name="theme-color" content="#4AB3B6">
-  <link rel="stylesheet" href="upload-file.css" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -321,16 +323,74 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Blank
+          Upload Document
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-file"></i> Blank</a></li>
+          <li><a href="#"><i class="fa fa-upload"></i> Upload Document</a></li>
         </ol>
       </section>
 
       <!-- Main content -->
       <section class="content">
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Upload Document</h3>
+  
+                <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- /.box-header -->
+              <div class="box-body graphic">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <form action="" method="POST" enctype="multipart/form-data" >
+                      <div class="container">
+                        <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                          <div class="preview-zone hidden">
+                            <div class="box box-solid">
+                            <div class="with-border">
+                              <h2>File Preview</h2>
+                            </div>
+                            <div class="box-body"></div>
+                            </div>
+                          </div>
+                          <div class="dropzone-wrapper">
+                            <div class="dropzone-desc">
+                            <i class="glyphicon glyphicon-download-alt"></i>
+                            <p>Choose an image file or drag it here.</p>
+                            </div>
+                            <input type="file" name="img_logo" class="dropzone">
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-primary center-block">Upload</button>
+                        </div>
+                        </div>
+                      </div>
+                    </form> 
+
+                  </div>
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->  
 
       </section>
       <!-- /.content -->
@@ -391,6 +451,13 @@
   </script>
 
   <!-- Script End -->
+
+  <!-- Drag & Drop Script Start -->
+  
+  <script src="../upload-file/upload-file.js"></script>
+
+  <!-- Drag & Drop Script End -->
+
 
 </body>
 </html>
