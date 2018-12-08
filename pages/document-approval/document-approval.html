@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Document Archieve | Ancient Archieve</title>
+  <title>Documents Approval | Ancient Archieve</title>
   
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -26,7 +26,7 @@
 
   <!-- Website Theme -->
   <meta id="theme-color" name="theme-color" content="#4AB3B6">
-  <link rel="stylesheet" href="document-archieved.css" />
+  <link rel="stylesheet" href="document-approval.css" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -250,9 +250,12 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <i class="fa fa-folder"></i>
-          Archieved Document
+          <i class="fa fa-file-text"></i>
+          Document Approval Status
         </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-file-text"></i> Document Approval Status</a></li>
+        </ol>
       </section>
 
       <!-- Main content -->
@@ -264,6 +267,7 @@
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#fresh" data-toggle="tab">Fresh</a></li>
+              <li><a href="#review" data-toggle="tab">Review</a></li>
               <li><a href="#approved" data-toggle="tab">Approved</a></li>
               <li><a href="#declined" data-toggle="tab">Declined</a></li>
             </ul>
@@ -286,7 +290,7 @@
                         <tr>
                           <th>Document ID</th>
                           <th>Document Name</th>
-                          <th>Archieved Date</th>
+                          <th>Upload Date</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -298,8 +302,8 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-info">Fresh</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-warning btn-flat">Review</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0004</a></td>
@@ -307,8 +311,8 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-info">Fresh</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-warning btn-flat">Review</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -317,8 +321,8 @@
                             <td>02 December 2018</td>
                             <td><span class="label label-info">Fresh</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-warning btn-flat">Review</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -327,8 +331,8 @@
                             <td>23 November 2018</td>
                             <td><span class="label label-info">Fresh</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-warning btn-flat">Review</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0001</a></td>
@@ -336,8 +340,8 @@
                             <td>29 October 2018</td>
                             <td><span class="label label-info">Fresh</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-warning btn-flat">Review</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                         </tbody>
@@ -355,6 +359,87 @@
               
               <!-- Fresh Tab End -->
 
+              <!-- Review Tab Start -->
+
+              <div class="tab-pane" id="review">
+
+                <div class="box box-info">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Review Progress</h3>        
+                  </div>
+                  <!-- /.box-header -->
+        
+                  <div class="box-body">
+                    <div class="table-responsive">
+                      <table id="example2" class="table no-margin">
+                        <thead>
+                        <tr>
+                          <th>Document ID</th>
+                          <th>Document Name</th>
+                          <th>Review Date</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="../document-detail/document-detail.html">DA0005</a></td>
+                            <td>Permohonan Pengajuan Ruang Seminar</td>
+                            <td>12 December 2018</td>
+                            <td><span class="label label-warning">Review</span></td>
+                            <td>
+                              <a href="#" class="btn btn-sm btn-danger btn-flat">Cancel</a>
+                            </td>
+                          <tr>
+                            <td><a href="../document-detail/document-detail.html">DA0004</a></td>
+                            <td>Permohonan Pengajuan Dana PMW</td>
+                            <td>12 December 2018</td>
+                            <td><span class="label label-warning">Review</span></td>
+                            <td>
+                              <a href="#" class="btn btn-sm btn-danger btn-flat">Cancel</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><a href="../document-detail/document-detail.html">DA0003</a></td>
+                            <td>Pengajuan Permintaan Kenaikan Pangkat</td>
+                            <td>02 December 2018</td>
+                            <td><span class="label label-warning">Review</span></td>
+                            <td>
+                              <a href="#" class="btn btn-sm btn-danger btn-flat">Cancel</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><a href="../document-detail/document-detail.html">DA0002</a></td>
+                            <td>Permohonan Pengajuan Kegiatan Workshop Bilibili</td>
+                            <td>23 November 2018</td>
+                            <td><span class="label label-warning">Review</span></td>
+                            <td>
+                              <a href="#" class="btn btn-sm btn-danger btn-flat">Cancel</a>
+                            </td>
+                          <tr>
+                            <td><a href="../document-detail/document-detail.html">DA0001</a></td>
+                            <td>Permohonan Pengajuan Cuti 3 Hari</td>
+                            <td>29 October 2018</td>
+                            <td><span class="label label-warning">Review</span></td>
+                            <td>
+                              <a href="#" class="btn btn-sm btn-danger btn-flat">Cancel</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                  </div>
+
+                </div>
+        
+                <!-- TABLE : Document End -->
+        
+              </div>
+              <!-- /.tab-pane -->
+
+              <!-- Review Tab End -->
+
               <!-- Approved Tab Start -->
 
               <div class="tab-pane" id="approved">
@@ -367,12 +452,12 @@
         
                   <div class="box-body">
                     <div class="table-responsive">
-                      <table id="example2" class="table no-margin">
+                      <table id="example3" class="table no-margin">
                         <thead>
                         <tr>
                           <th>Document ID</th>
                           <th>Document Name</th>
-                          <th>Archieved Date</th>
+                          <th>Approved Date</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -384,8 +469,7 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-success">Approved</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0004</a></td>
@@ -393,8 +477,7 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-success">Approved</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -403,8 +486,7 @@
                             <td>02 December 2018</td>
                             <td><span class="label label-success">Approved</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -413,8 +495,7 @@
                             <td>23 November 2018</td>
                             <td><span class="label label-success">Approved</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0001</a></td>
@@ -422,8 +503,7 @@
                             <td>29 October 2018</td>
                             <td><span class="label label-success">Approved</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                         </tbody>
@@ -453,12 +533,12 @@
         
                   <div class="box-body">
                     <div class="table-responsive">
-                      <table id="example3"  class="table no-margin">
+                      <table id="example4"  class="table no-margin">
                         <thead>
                         <tr>
                           <th>Document ID</th>
                           <th>Document Name</th>
-                          <th>Archieved Date</th>
+                          <th>Declined Date</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -470,8 +550,7 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-danger">Declined</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0004</a></td>
@@ -479,8 +558,7 @@
                             <td>12 December 2018</td>
                             <td><span class="label label-danger">Declined</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -489,8 +567,7 @@
                             <td>02 December 2018</td>
                             <td><span class="label label-danger">Declined</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                           <tr>
@@ -499,8 +576,7 @@
                             <td>23 November 2018</td>
                             <td><span class="label label-danger">Declined</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           <tr>
                             <td><a href="../document-detail/document-detail.html">DA0001</a></td>
@@ -508,8 +584,7 @@
                             <td>29 October 2018</td>
                             <td><span class="label label-danger">Declined</span></td>
                             <td>
-                              <a href="#" class="btn btn-sm btn-success btn-flat">Restore</a>
-                              <a href="#" class="btn btn-sm btn-danger btn-flat">Delete</a>
+                              <a href="#" class="btn btn-sm btn-primary btn-flat">Archieve</a>
                             </td>
                           </tr>
                         </tbody>
@@ -532,8 +607,8 @@
           <!-- /.nav-tabs-custom -->
         </div>
 
-        <!-- Navigation Tab End -->        
-
+        <!-- Navigation Tab End -->
+        
       </section>
       <!-- /.content -->
     </div>
@@ -568,7 +643,7 @@
   <!-- DataTables -->
   <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-  
+
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
 
@@ -602,9 +677,9 @@
       $('#example1').DataTable()
       $('#example2').DataTable()
       $('#example3').DataTable()
+      $('#example4').DataTable()
     })
   </script>
-  
 
   <!-- Script End -->
 
